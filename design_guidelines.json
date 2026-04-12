@@ -1,0 +1,103 @@
+{
+  "theme": "dark",
+  "archetype": "Custom Dark Grunge / Brutalist (Archetype 4/5 Hybrid)",
+  "colors": {
+    "background": "#0A0A0A",
+    "surface": "#121212",
+    "surface_elevated": "#1A1A1A",
+    "primary": "#D42A2A",
+    "primary_hover": "#B91C1C",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#A1A1AA",
+    "border": "#333333"
+  },
+  "typography": {
+    "fonts": [
+      {
+        "name": "Anton",
+        "usage": "H1, H2, Hero displays (Unapologetic, Loud, Blocky)"
+      },
+      {
+        "name": "Permanent Marker",
+        "usage": "Accent text, vibrant red script, profanity overlays, handwriting vibe"
+      },
+      {
+        "name": "IBM Plex Sans",
+        "usage": "Body copy, UI elements, reading text"
+      }
+    ],
+    "rules": [
+      "Headings (Anton) must be uppercase with tracking-tight or tracking-tighter.",
+      "Accent text (Permanent Marker) should be rotated slightly (-rotate-2 or -rotate-3) to look like real handwriting/graffiti.",
+      "Body text should be easily readable (text-gray-300 or text-gray-400)."
+    ]
+  },
+  "layout_and_spacing": {
+    "rules": [
+      "Use massive spacing between sections (py-24 or py-32).",
+      "Use heavy borders (border-[#333333]) and brutalist asymmetric bento grids for content blocks.",
+      "Containers must have generous internal padding (p-8 to p-12).",
+      "Implement a gritty noise overlay on the entire body using a CSS mix-blend-mode or pseudo-element to emulate 'grunge'."
+    ]
+  },
+  "components": {
+    "buttons": "Brutalist blocky buttons. Square or extremely minimal border-radius (rounded-none). High contrast. Hover states should be dramatic (e.g., bg-[#D42A2A] to bg-transparent with red border).",
+    "book_cover_css": "CRITICAL: Since the original image isn't available, build a realistic 3D CSS book cover component. Use the provided concrete texture as the cover background (bg-cover). Layer text 'HOLY SH*T' (Anton, white/gray #E0E0E0) and 'THEY'RE GONE' (Permanent Marker, red #D42A2A). Use drop shadows and CSS transforms (rotateY, perspective) to make it look like a physical book.",
+    "cards": "Flat surfaces (bg-[#121212]) with sharp 1px borders (border-[#333333]), no soft shadows, maybe sharp drop-shadows (e.g. shadow-[4px_4px_0_#D42A2A] for brutalist feel)."
+  },
+  "media": {
+    "images": [
+      {
+        "category": "background_texture",
+        "url": "https://static.prod-images.emergentagent.com/jobs/613089b4-8ba0-462f-abf7-19092ae23d29/images/96f9e2cb02b4ba6ad876f8a9b0e37fd7a05ad9d2cae098b8b0d71e0a54d5227b.png",
+        "description": "Generated dark grunge concrete texture. Use for full-screen hero background or book cover background with blend modes (e.g., mix-blend-overlay or opacity-20)."
+      },
+      {
+        "category": "author_portrait",
+        "url": "https://images.unsplash.com/photo-1681597108168-353c13e8e7a5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwyfHxkYXJrJTIwZHJhbWF0aWMlMjBwb3J0cmFpdCUyMHdvbWFufGVufDB8fHx8MTc3NjAxMTc4MXww&ixlib=rb-4.1.0&q=85",
+        "description": "Dramatic dark portrait for Cassandra Crossno's 'About the Author' section. Apply grayscale or high contrast filters."
+      },
+      {
+        "category": "concrete_texture_alt",
+        "url": "https://images.unsplash.com/photo-1770351978852-43d97c436b4f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHw0fHxkYXJrJTIwY29uY3JldGUlMjB0ZXh0dXJlJTIwZ3J1bmdlfGVufDB8fHx8MTc3NjAxMTc2NHww&ixlib=rb-4.1.0&q=85",
+        "description": "Alternative abstract grayscale texture with dark and light areas, useful for section backgrounds."
+      }
+    ]
+  },
+  "sections_to_build": [
+    {
+      "name": "Header",
+      "details": "Sticky top nav. Black background. Logo text: 'ASHES & WHISKEY'. Links: The Book, Author, Purchase. CTA: 'Get the Book'."
+    },
+    {
+      "name": "Hero",
+      "details": "High-impact layout. Left: The CSS-built 3D Book Cover. Right: Massive text 'HOLY SH*T, THEY'RE GONE'. Subheadline: 'Navigating the F*cking Aftermath of Loss Without the Bullsh*t'. Gritty CTA. Use a dark texture overlay."
+    },
+    {
+      "name": "Purchase_Links",
+      "details": "Brutalist grid (bento style) of purchase links: Amazon, B&N, BAM, Kobo, Smashwords. No soft logos—use text and sharp borders. Huge touch targets."
+    },
+    {
+      "name": "About_The_Book",
+      "details": "Title: 'IF YOUR WORLD JUST EXPLODED'. Text: 'You’re not going through a rough patch. Your entire life got napalmed. The people around you want you to be okay again because it makes them more comfortable. This space is not for them. It’s for you — the one who actually has to live in the crater.' Use high contrast dark charcoal backgrounds."
+    },
+    {
+      "name": "About_The_Author",
+      "details": "Title: 'THE BROAD BEHIND THE MADNESS'. Text: 'I'm Cassandra Crossno. I'm not a therapist, a grief counselor, or a spiritual guru. I'm someone who watched my entire world go up in flames and had to figure out how to keep f*cking breathing anyway.' Pair with the dark portrait."
+    },
+    {
+      "name": "Newsletter",
+      "details": "Title: 'GET THE GRIEF SURVIVAL CHEAT SHEET'. Brutalist email input. Submit button: 'F*ck It, I'm In'."
+    },
+    {
+      "name": "Footer",
+      "details": "Copyright '© 2026 Ashes & Whiskey — Crafted with fire, fury, and zero f*cks given.' Social links."
+    }
+  ],
+  "instructions_to_main_agent": [
+    "You MUST use HTML/Tailwind CSS to build a 3D-looking book cover in the hero section based on the design elements provided.",
+    "Inject a global CSS rule for a gritty noise overlay (e.g. background-image with small noise pattern on the body or an absolute div with pointer-events-none).",
+    "Use Phosphor icons or Lucide icons heavily but keep them sharp and raw.",
+    "Do NOT use typical smooth SaaS components. Use sharp edges (rounded-none), thick borders, and high contrast."
+  ]
+}
