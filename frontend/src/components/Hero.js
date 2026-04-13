@@ -72,14 +72,14 @@ export default function Hero() {
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-2xl">
           <p
             data-animate
-            className="font-marker text-blood text-base md:text-lg -rotate-2 mb-4"
+            className="font-heading text-blood text-base md:text-lg -rotate-2 mb-4"
           >
             A grief book that doesn't play nice
           </p>
 
           <h1
             data-animate
-            className="font-anton text-5xl sm:text-6xl md:text-7xl lg:text-8xl uppercase leading-[0.9] tracking-tight text-white mb-6"
+            className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl uppercase leading-[0.9] tracking-tight text-white mb-6"
           >
             HOLY SH*T,
             <br />
@@ -106,14 +106,14 @@ export default function Hero() {
             <a
               href="#purchase"
               data-testid="hero-cta-get-book"
-              className="font-anton text-lg uppercase tracking-wider px-10 py-4 bg-blood text-white hover:bg-blood-dark transition-colors duration-200 text-center"
+              className="font-heading text-lg uppercase tracking-wider px-10 py-4 bg-blood text-white hover:bg-blood-dark transition-colors duration-200 text-center"
             >
               GET THE BOOK
             </a>
             <a
               href="#about-book"
               data-testid="hero-cta-learn-more"
-              className="font-body text-sm uppercase tracking-widest px-10 py-4 border-2 border-grit text-ash hover:border-blood hover:text-white transition-all duration-200 text-center"
+              className="font-heading text-sm uppercase tracking-widest px-10 py-4 border-2 border-grit text-ash hover:border-blood hover:text-white transition-all duration-200 text-center"
             >
               WHAT IS THIS?
             </a>
@@ -121,7 +121,7 @@ export default function Hero() {
 
           <p
             data-animate
-            className="font-marker text-blood/60 text-sm mt-8 -rotate-1"
+            className="font-heading text-blood/60 text-sm mt-8 -rotate-1"
           >
             by Cassandra Crossno
           </p>

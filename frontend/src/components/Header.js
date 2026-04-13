@@ -28,7 +28,7 @@ export default function Header() {
         <a
           href="#hero"
           data-testid="header-logo"
-          className="font-marker text-blood text-xl md:text-2xl tracking-wide hover:opacity-80 transition-opacity"
+          className="font-heading text-blood text-xl md:text-2xl tracking-wide hover:opacity-80 transition-opacity"
         >
           ASHES & WHISKEY
         </a>
@@ -40,7 +40,7 @@ export default function Header() {
               key={link.href}
               href={link.href}
               data-testid={`nav-${link.label.toLowerCase().replace(/\s/g, '-')}`}
-              className="font-body text-sm uppercase tracking-widest text-ash hover:text-white transition-colors duration-200"
+              className="font-heading text-sm uppercase tracking-widest text-ash hover:text-white transition-colors duration-200"
             >
               {link.label}
             </a>
@@ -48,7 +48,7 @@ export default function Header() {
           <a
             href="#purchase"
             data-testid="nav-cta-get-book"
-            className="font-anton text-sm uppercase tracking-wider px-6 py-2.5 bg-blood text-white hover:bg-blood-dark transition-colors duration-200"
+            className="font-heading text-sm uppercase tracking-wider px-6 py-2.5 bg-blood text-white hover:bg-blood-dark transition-colors duration-200"
           >
             GET THE BOOK
           </a>
@@ -77,7 +77,7 @@ export default function Header() {
                 href={link.href}
                 data-testid={`mobile-nav-${link.label.toLowerCase().replace(/\s/g, '-')}`}
                 onClick={() => setMenuOpen(false)}
-                className="font-body text-lg uppercase tracking-widest text-ash hover:text-white transition-colors"
+                className="font-heading text-lg uppercase tracking-widest text-ash hover:text-white transition-colors"
               >
                 {link.label}
               </a>
@@ -86,7 +86,7 @@ export default function Header() {
               href="#purchase"
               data-testid="mobile-nav-cta"
               onClick={() => setMenuOpen(false)}
-              className="font-anton text-lg uppercase tracking-wider px-8 py-3 bg-blood text-white"
+              className="font-heading text-lg uppercase tracking-wider px-8 py-3 bg-blood text-white"
             >
               GET THE BOOK
             </a>

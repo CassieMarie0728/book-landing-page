@@ -36,14 +36,14 @@ export default function AboutBook() {
 
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <p
-          className="font-marker text-blood text-lg md:text-xl -rotate-2 mb-4"
+          className="font-heading text-blood text-lg md:text-xl -rotate-2 mb-4"
           data-testid="about-book-label"
         >
           If your world just exploded
         </p>
 
         <h2
-          className="font-anton text-4xl sm:text-5xl md:text-6xl uppercase tracking-tight text-white mb-8 leading-[0.95]"
+          className="font-heading text-4xl sm:text-5xl md:text-6xl uppercase tracking-tight text-white mb-8 leading-[0.95]"
           data-testid="about-book-title"
         >
           THIS ISN'T A
@@ -80,7 +80,7 @@ export default function AboutBook() {
                 size={32}
                 strokeWidth={1.5}
               />
-              <h3 className="font-anton text-xl md:text-2xl uppercase tracking-tight text-white mb-2">
+              <h3 className="font-heading text-xl md:text-2xl uppercase tracking-tight text-white mb-2">
                 {t.title}
               </h3>
               <p className="font-body text-ash text-sm md:text-base leading-relaxed">

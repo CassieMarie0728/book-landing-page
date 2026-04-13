@@ -39,13 +39,13 @@ export default function PurchaseLinks() {
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <div className="text-center mb-16">
           <p
-            className="font-marker text-blood text-lg md:text-xl -rotate-1 mb-4"
+            className="font-heading text-blood text-lg md:text-xl -rotate-1 mb-4"
             data-testid="purchase-label"
           >
             Pick your poison
           </p>
           <h2
-            className="font-anton text-4xl sm:text-5xl md:text-6xl uppercase tracking-tight text-white leading-[0.95]"
+            className="font-heading text-4xl sm:text-5xl md:text-6xl uppercase tracking-tight text-white leading-[0.95]"
             data-testid="purchase-title"
           >
             GET THE <span className="text-blood">DAMN</span> BOOK
@@ -63,7 +63,7 @@ export default function PurchaseLinks() {
               className="group relative flex items-center justify-between bg-elevated border-2 border-grit p-6 md:p-8 hover:border-blood hover:bg-surface transition-all duration-300"
             >
               <div>
-                <h3 className="font-anton text-2xl md:text-3xl uppercase tracking-tight text-white group-hover:text-blood transition-colors duration-200">
+                <h3 className="font-heading text-2xl md:text-3xl uppercase tracking-tight text-white group-hover:text-blood transition-colors duration-200">
                   {store.name}
                 </h3>
                 <p className="font-body text-ash text-sm uppercase tracking-widest mt-1">
@@ -83,10 +83,10 @@ export default function PurchaseLinks() {
             className="relative flex items-center justify-between bg-elevated/50 border-2 border-grit/50 p-6 md:p-8"
           >
             <div>
-              <h3 className="font-anton text-2xl md:text-3xl uppercase tracking-tight text-ash/60">
+              <h3 className="font-heading text-2xl md:text-3xl uppercase tracking-tight text-ash/60">
                 Audiobook
               </h3>
-              <p className="font-marker text-blood text-sm mt-1 -rotate-1">
+              <p className="font-heading text-blood text-sm mt-1 -rotate-1">
                 Coming soon
               </p>
             </div>

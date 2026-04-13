@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AUTHOR_PORTRAIT = 'https://images.unsplash.com/photo-1681597108168-353c13e8e7a5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwyfHxkYXJrJTIwZHJhbWF0aWMlMjBwb3J0cmFpdCUyMHdvbWFufGVufDB8fHx8MTc3NjAxMTc4MXww&ixlib=rb-4.1.0&q=85';
+const AUTHOR_PLACEHOLDER = 'https://images.unsplash.com/photo-1591532149831-0211578ec58f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzZ8MHwxfHNlYXJjaHwzfHxkYXJrJTIwbW9vZHklMjB0eXBld3JpdGVyJTIwd2hpc2tleSUyMGdsYXNzJTIwdmludGFnZSUyMGRlc2t8ZW58MHx8fHwxNzc2MDQzNjI2fDA&ixlib=rb-4.1.0&q=85';
 
 export default function AboutAuthor() {
   return (
@@ -14,20 +14,20 @@ export default function AboutAuthor() {
 
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
-          {/* Portrait */}
+          {/* Placeholder Image */}
           <div className="flex-shrink-0 relative" data-testid="author-portrait-container">
             <div
               className="w-[280px] h-[360px] md:w-[340px] md:h-[440px] overflow-hidden border-2 border-grit"
               style={{ boxShadow: '8px 8px 0 #D42A2A' }}
             >
               <img
-                src={AUTHOR_PORTRAIT}
-                alt="Cassandra Crossno"
+                src={AUTHOR_PLACEHOLDER}
+                alt="Whiskey glass and keyboard - Ashes & Whiskey"
                 data-testid="author-portrait"
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                className="w-full h-full object-cover"
               />
             </div>
-            <p className="font-marker text-blood text-sm absolute -bottom-4 -right-4 rotate-3">
+            <p className="font-heading text-blood text-sm absolute -bottom-4 -right-4 rotate-3">
               Navy Vet. Writer. Survivor.
             </p>
           </div>
@@ -35,14 +35,14 @@ export default function AboutAuthor() {
           {/* Bio */}
           <div className="flex-1">
             <p
-              className="font-marker text-blood text-lg md:text-xl -rotate-2 mb-4"
+              className="font-heading text-blood text-lg md:text-xl -rotate-2 mb-4"
               data-testid="author-label"
             >
               The broad behind the madness
             </p>
 
             <h2
-              className="font-anton text-4xl sm:text-5xl md:text-6xl uppercase tracking-tight text-white mb-8 leading-[0.95]"
+              className="font-heading text-4xl sm:text-5xl md:text-6xl uppercase tracking-tight text-white mb-8 leading-[0.95]"
               data-testid="author-title"
             >
               CASSANDRA

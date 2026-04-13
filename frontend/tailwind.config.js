@@ -14,9 +14,8 @@ module.exports = {
         grit: '#333333',
       },
       fontFamily: {
-        anton: ['Anton', 'sans-serif'],
-        marker: ['Permanent Marker', 'cursive'],
-        body: ['IBM Plex Sans', 'sans-serif'],
+        heading: ['"Special Elite"', 'cursive'],
+        body: ['"Courier New"', 'Courier', 'monospace'],
       },
     },
   },

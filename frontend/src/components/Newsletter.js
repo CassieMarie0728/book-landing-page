@@ -42,14 +42,14 @@ export default function Newsletter() {
     >
       <div className="max-w-3xl mx-auto px-6 md:px-10 text-center">
         <p
-          className="font-marker text-blood text-lg md:text-xl -rotate-1 mb-4"
+          className="font-heading text-blood text-lg md:text-xl -rotate-1 mb-4"
           data-testid="newsletter-label"
         >
           Don't grieve alone
         </p>
 
         <h2
-          className="font-anton text-4xl sm:text-5xl md:text-6xl uppercase tracking-tight text-white mb-6 leading-[0.95]"
+          className="font-heading text-4xl sm:text-5xl md:text-6xl uppercase tracking-tight text-white mb-6 leading-[0.95]"
           data-testid="newsletter-title"
         >
           GET THE <span className="text-blood">GRIEF SURVIVAL</span>
@@ -85,7 +85,7 @@ export default function Newsletter() {
               type="submit"
               disabled={status === 'loading'}
               data-testid="newsletter-submit-button"
-              className="font-anton text-base uppercase tracking-wider px-8 py-4 bg-blood text-white hover:bg-blood-dark transition-colors duration-200 flex items-center justify-center gap-2 disabled:opacity-60"
+              className="font-heading text-base uppercase tracking-wider px-8 py-4 bg-blood text-white hover:bg-blood-dark transition-colors duration-200 flex items-center justify-center gap-2 disabled:opacity-60"
             >
               {status === 'loading' ? (
                 'SENDING...'

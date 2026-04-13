@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Brand */}
           <div className="text-center md:text-left">
-            <p className="font-marker text-blood text-xl mb-2" data-testid="footer-brand">
+            <p className="font-heading text-blood text-xl mb-2" data-testid="footer-brand">
               ASHES & WHISKEY
             </p>
             <p className="font-body text-ash/60 text-sm" data-testid="footer-copyright">
@@ -25,7 +25,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               data-testid="footer-link-main-site"
-              className="font-body text-sm uppercase tracking-widest text-ash hover:text-blood transition-colors duration-200"
+              className="font-heading text-sm uppercase tracking-widest text-ash hover:text-blood transition-colors duration-200"
             >
               Main Site
             </a>
@@ -34,14 +34,14 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               data-testid="footer-link-blog"
-              className="font-body text-sm uppercase tracking-widest text-ash hover:text-blood transition-colors duration-200"
+              className="font-heading text-sm uppercase tracking-widest text-ash hover:text-blood transition-colors duration-200"
             >
               The Blog
             </a>
             <a
               href="#purchase"
               data-testid="footer-link-buy"
-              className="font-body text-sm uppercase tracking-widest text-ash hover:text-blood transition-colors duration-200"
+              className="font-heading text-sm uppercase tracking-widest text-ash hover:text-blood transition-colors duration-200"
             >
               Buy
             </a>
